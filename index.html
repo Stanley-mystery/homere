@@ -54,19 +54,22 @@
   </head>
 
   <body class="index-page">
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
     <header id="header" class="header position-relative">
       <!-- Top Utility Bar -->
-      <div class="utility-bar">
+      <!-- <div class="utility-bar">
         <div class="container-fluid container-xl">
           <div class="row align-items-center">
             <div class="col-auto">
               <div class="utility-links">
-                <a href="store-locator.html" class="utility-link">
+                <a href="#" class="utility-link">
                   <i class="bi bi-pin-map"></i>
                   <span>Visit Showroom</span>
                 </a>
                 <span class="utility-divider"></span>
-                <a href="help.html" class="utility-link">
+                <a href="#" class="utility-link">
                   <i class="bi bi-headset"></i>
                   <span>Design Support</span>
                 </a>
@@ -79,7 +82,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Main Header -->
       <div class="main-bar">
@@ -87,7 +90,7 @@
           <div class="row align-items-center gy-2">
             <!-- Logo -->
             <div class="col-auto">
-              <a href="index.html" class="logo d-flex align-items-center">
+              <a href="#" class="logo d-flex align-items-center">
                 <img src="assets/images/homere-logo.jpg" alt="HOMÈRE" />
               </a>
             </div>
@@ -149,27 +152,27 @@
                       <p>Log in for a personalized experience</p>
                     </div>
                     <div class="flyout-actions">
-                      <a href="login.html" class="btn btn-primary-action"
+                      <a href="#" class="btn btn-primary-action"
                         >Log In</a
                       >
-                      <a href="register.html" class="btn btn-outline-action"
+                      <a href="#" class="btn btn-outline-action"
                         >Register</a
                       >
                     </div>
                     <div class="flyout-links">
-                      <a href="orders.html">
+                      <a href="#">
                         <i class="bi bi-receipt"></i>
                         <span>Order History</span>
                       </a>
-                      <a href="wishlist.html">
+                      <a href="#">
                         <i class="bi bi-bookmark-heart"></i>
                         <span>Favorites</span>
                       </a>
-                      <a href="returns.html">
+                      <a href="#">
                         <i class="bi bi-arrow-counterclockwise"></i>
                         <span>Returns &amp; Exchanges</span>
                       </a>
-                      <a href="help.html">
+                      <a href="#">
                         <i class="bi bi-life-preserver"></i>
                         <span>Support Center</span>
                       </a>
@@ -179,7 +182,7 @@
 
                 <!-- Wishlist -->
                 <a
-                  href="account.html"
+                  href="#"
                   class="action-btn d-none d-md-flex"
                   aria-label="Wishlist"
                 >
@@ -188,106 +191,25 @@
                 </a>
 
                 <!-- Cart -->
-                <div class="dropdown">
-                  <button
-                    class="action-btn"
-                    data-bs-toggle="dropdown"
-                    aria-label="Cart"
+                <button
+                  type="button"
+                  class="cart-art"
+                  id="cartBtn"
+                  aria-label="Shopping cart"
+                  aria-expanded="false"
+                  aria-controls="cartDrawer"
+                >
+                  <svg
+                    class="cart-svg"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    focusable="false"
                   >
-                    <i class="bi bi-bag"></i>
-                    <span class="badge-count">3</span>
-                  </button>
-                  <div class="dropdown-menu cart-flyout">
-                    <div class="flyout-top">
-                      <h6>Your Bag</h6>
-                      <span class="items-label">3 items</span>
-                    </div>
-                    <div class="flyout-items">
-                      <!-- Cart Item 1 -->
-                      <div class="flyout-item">
-                        <div class="flyout-item-thumb">
-                          <img
-                            src="https://res.cloudinary.com/dbczzmftw/image/upload/v1774874077/nnbaanflqomcjupi7u75.webp?v=1741862673&width=1080"
-                            alt="Product"
-                            class="img-fluid"
-                          />
-                        </div>
-                        <div class="flyout-item-details">
-                          <h6>Textured Accent Cushion</h6>
-                          <span class="item-option">Ivory / 50cm</span>
-                          <div class="item-bottom">
-                            <span class="item-price">$89.00</span>
-                            <span class="item-qty">x1</span>
-                          </div>
-                        </div>
-                        <button class="item-dismiss" aria-label="Remove item">
-                          <i class="bi bi-trash3"></i>
-                        </button>
-                      </div>
-                      <!-- End Cart Item -->
-
-                      <!-- Cart Item 2 -->
-                      <div class="flyout-item">
-                        <div class="flyout-item-thumb">
-                          <img
-                            src="https://res.cloudinary.com/dbczzmftw/image/upload/v1774871661/tht45l5fo4ebpfsie9vr.webp?v=1767383604&width=2652"
-                            alt="Product"
-                            class="img-fluid"
-                          />
-                        </div>
-                        <div class="flyout-item-details">
-                          <h6>Travertine Table Lamp</h6>
-                          <span class="item-option">Warm Stone / Small</span>
-                          <div class="item-bottom">
-                            <span class="item-price">$145.00</span>
-                            <span class="item-qty">x1</span>
-                          </div>
-                        </div>
-                        <button class="item-dismiss" aria-label="Remove item">
-                          <i class="bi bi-trash3"></i>
-                        </button>
-                      </div>
-                      <!-- End Cart Item -->
-
-                      <!-- Cart Item 3 -->
-                      <div class="flyout-item">
-                        <div class="flyout-item-thumb">
-                          <img
-                            src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=900&auto=format&fit=crop"
-                            alt="Product"
-                            class="img-fluid"
-                          />
-                        </div>
-                        <div class="flyout-item-details">
-                          <h6>Ceramic Vessel Set</h6>
-                          <span class="item-option"
-                            >Matte White / Set of 3</span
-                          >
-                          <div class="item-bottom">
-                            <span class="item-price">$68.00</span>
-                            <span class="item-qty">x1</span>
-                          </div>
-                        </div>
-                        <button class="item-dismiss" aria-label="Remove item">
-                          <i class="bi bi-trash3"></i>
-                        </button>
-                      </div>
-                      <!-- End Cart Item -->
-                    </div>
-                    <div class="flyout-bottom">
-                      <div class="subtotal-row">
-                        <span>Subtotal</span>
-                        <span class="subtotal-value">$302.00</span>
-                      </div>
-                      <a href="checkout.html" class="btn btn-proceed"
-                        >Proceed to Checkout</a
-                      >
-                      <a href="cart.html" class="link-viewbag"
-                        >View full bag →</a
-                      >
-                    </div>
-                  </div>
-                </div>
+                    <path d="M7 8h10l-1.2 9.2a2 2 0 0 1-2 1.8H10.2a2 2 0 0 1-2-1.8L7 8Z" />
+                    <path d="M9 8a3 3 0 0 1 6 0" />
+                  </svg>
+                  <span class="cart-badge" id="cartBadge">0</span>
+                </button>
 
                 <!-- Mobile Navigation Toggle -->
                 <i class="mobile-nav-toggle d-xl-none bi bi-list me-0"></i>
@@ -302,37 +224,12 @@
         <div class="container-fluid container-xl position-relative">
           <nav id="navmenu" class="navmenu">
             <ul>
-              <li><a href="index.html" class="active">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="https://staging.homere.com/collections/9">Collections</a></li>
-              <li><a href="https://staging.homere.com/home">Design Details</a></li>
-              <li><a href="cart.html">Cart</a></li>
-              <li><a href="checkout.html">Checkout</a></li>
-              <li class="dropdown">
-                <a href="#"
-                  ><span>Dropdown</span>
-                  <i class="bi bi-chevron-down toggle-dropdown"></i
-                ></a>
-                <ul>
-                  <li><a href="#">Dropdown 1</a></li>
-                  <li class="dropdown">
-                    <a href="#"
-                      ><span>Deep Dropdown</span>
-                      <i class="bi bi-chevron-down toggle-dropdown"></i
-                    ></a>
-                    <ul>
-                      <li><a href="#">Deep Dropdown 1</a></li>
-                      <li><a href="#">Deep Dropdown 2</a></li>
-                      <li><a href="#">Deep Dropdown 3</a></li>
-                      <li><a href="#">Deep Dropdown 4</a></li>
-                      <li><a href="#">Deep Dropdown 5</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Dropdown 2</a></li>
-                  <li><a href="#">Dropdown 3</a></li>
-                  <li><a href="#">Dropdown 4</a></li>
-                </ul>
-              </li>
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Collections</a></li>
+              <li><a href="#">Design Details</a></li>
+              <li><a href="#">Cart</a></li>
+              <li><a href="#">Checkout</a></li>
 
               <!-- Products Mega Menu 1 -->
               <li class="products-megamenu-1">
@@ -492,7 +389,7 @@
                           <div class="product-info">
                             <h5>Textured Accent Cushion</h5>
                             <p class="price">$129.99</p>
-                            <a href="https://staging.homere.com/home" class="btn-view">View Piece</a>
+                            <a href="#" class="btn-view">View Piece</a>
                           </div>
                         </div>
                         <div class="product-card">
@@ -506,7 +403,7 @@
                           <div class="product-info">
                             <h5>Marble Side Table</h5>
                             <p class="price">$199.99</p>
-                            <a href="https://staging.homere.com/home" class="btn-view">View Piece</a>
+                            <a href="#" class="btn-view">View Piece</a>
                           </div>
                         </div>
                         <div class="product-card">
@@ -520,7 +417,7 @@
                           <div class="product-info">
                             <h5>Ceramic Vessel Trio</h5>
                             <p class="price">$89.99</p>
-                            <a href="https://staging.homere.com/home" class="btn-view">View Piece</a>
+                            <a href="#" class="btn-view">View Piece</a>
                           </div>
                         </div>
                         <div class="product-card">
@@ -534,7 +431,7 @@
                           <div class="product-info">
                             <h5>Sculptural Lounge Chair</h5>
                             <p class="price">$79.99</p>
-                            <a href="https://staging.homere.com/home" class="btn-view">View Piece</a>
+                            <a href="#" class="btn-view">View Piece</a>
                           </div>
                         </div>
                       </div>
@@ -560,7 +457,7 @@
                           <div class="product-info">
                             <h5>Linen Throw Pillow</h5>
                             <p class="price">$69.99</p>
-                            <a href="https://staging.homere.com/home" class="btn-view">View Piece</a>
+                            <a href="#" class="btn-view">View Piece</a>
                           </div>
                         </div>
                         <div class="product-card">
@@ -575,7 +472,7 @@
                           <div class="product-info">
                             <h5>Curved Sofa</h5>
                             <p class="price">$39.99</p>
-                            <a href="https://staging.homere.com/home" class="btn-view">View Piece</a>
+                            <a href="#" class="btn-view">View Piece</a>
                           </div>
                         </div>
                         <div class="product-card">
@@ -590,7 +487,7 @@
                           <div class="product-info">
                             <h5>Open-Plan Living Room</h5>
                             <p class="price">$49.99</p>
-                            <a href="https://staging.homere.com/home" class="btn-view">View Piece</a>
+                            <a href="#" class="btn-view">View Piece</a>
                           </div>
                         </div>
                         <div class="product-card">
@@ -605,7 +502,7 @@
                           <div class="product-info">
                             <h5>Statement Armchair</h5>
                             <p class="price">$59.99</p>
-                            <a href="https://staging.homere.com/home" class="btn-view">View Piece</a>
+                            <a href="#" class="btn-view">View Piece</a>
                           </div>
                         </div>
                       </div>
@@ -633,7 +530,7 @@
                             <p class="price">
                               <span class="original-price">$89.99</span> $62.99
                             </p>
-                            <a href="https://staging.homere.com/home" class="btn-view">View Piece</a>
+                            <a href="#" class="btn-view">View Piece</a>
                           </div>
                         </div>
                         <div class="product-card">
@@ -650,7 +547,7 @@
                             <p class="price">
                               <span class="original-price">$59.99</span> $44.99
                             </p>
-                            <a href="https://staging.homere.com/home" class="btn-view">View Piece</a>
+                            <a href="#" class="btn-view">View Piece</a>
                           </div>
                         </div>
                         <div class="product-card">
@@ -667,7 +564,7 @@
                             <p class="price">
                               <span class="original-price">$49.99</span> $29.99
                             </p>
-                            <a href="https://staging.homere.com/home" class="btn-view">View Piece</a>
+                            <a href="#" class="btn-view">View Piece</a>
                           </div>
                         </div>
                         <div class="product-card">
@@ -684,7 +581,7 @@
                             <p class="price">
                               <span class="original-price">$39.99</span> $31.99
                             </p>
-                            <a href="https://staging.homere.com/home" class="btn-view">View Piece</a>
+                            <a href="#" class="btn-view">View Piece</a>
                           </div>
                         </div>
                       </div>
@@ -937,7 +834,7 @@
                             />
                             <div class="featured-content">
                               <h3>Living<br />Room<br />Collection</h3>
-                              <a href="https://staging.homere.com/home" class="btn-shop">View edit</a>
+                              <a href="#" class="btn-shop">View edit</a>
                             </div>
                           </div>
                         </div>
@@ -1013,7 +910,7 @@
                             />
                             <div class="featured-content">
                               <h3>Dining<br />Room<br />Collection</h3>
-                              <a href="https://staging.homere.com/home" class="btn-shop">View edit</a>
+                              <a href="#" class="btn-shop">View edit</a>
                             </div>
                           </div>
                         </div>
@@ -1089,7 +986,7 @@
                             />
                             <div class="featured-content">
                               <h3>Decor<br />New<br />Arrivals</h3>
-                              <a href="https://staging.homere.com/home" class="btn-shop">View edit</a>
+                              <a href="#" class="btn-shop">View edit</a>
                             </div>
                           </div>
                         </div>
@@ -1101,7 +998,7 @@
               </li>
               <!-- End Products Mega Menu 2 -->
 
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -1141,10 +1038,10 @@
                   living.
                 </p>
                 <div class="action-group">
-                  <a href="https://staging.homere.com/collections/9" class="btn-primary-action"
+                  <a href="#" class="btn-primary-action"
                     >Browse Collection</a
                   >
-                  <a href="https://staging.homere.com/collections/9" class="btn-ghost-action"
+                  <a href="#" class="btn-ghost-action"
                     ><i class="bi bi-arrow-right me-2"></i>Book a
                     Consultation</a
                   >
@@ -1588,7 +1485,7 @@
                     available
                   </li>
                 </ul>
-                <a href="https://staging.homere.com/collections/9" class="btn-primary-action"
+                <a href="#" class="btn-primary-action"
                   >Explore Collection <i class="bi bi-arrow-right"></i
                 ></a>
               </div>
@@ -1729,7 +1626,7 @@
                     </div>
                   </div>
                   <h4 class="product-title">
-                    <a href="https://staging.homere.com/home"
+                    <a href="#"
                       >Handwoven Textured Accent Cushion</a
                     >
                   </h4>
@@ -1788,7 +1685,7 @@
                     </div>
                   </div>
                   <h4 class="product-title">
-                    <a href="https://staging.homere.com/home"
+                    <a href="#"
                       >Sculptural Lounge Chair in Warm Boucle</a
                     >
                   </h4>
@@ -1852,7 +1749,7 @@
                     </div>
                   </div>
                   <h4 class="product-title">
-                    <a href="https://staging.homere.com/home"
+                    <a href="#"
                       >Ceramic Vessel Set for Console Styling</a
                     >
                   </h4>
@@ -1911,7 +1808,7 @@
                     </div>
                   </div>
                   <h4 class="product-title">
-                    <a href="https://staging.homere.com/home"
+                    <a href="#"
                       >Oak Side Table with Soft Rounded Edge</a
                     >
                   </h4>
@@ -2555,10 +2452,10 @@
               </div>
               <div class="col-lg-3">
                 <div class="banner-actions">
-                  <a href="https://staging.homere.com/collections/105" class="btn-primary-deal"
+                  <a href="#" class="btn-primary-deal"
                     >Claim Offer <i class="bi bi-arrow-right"></i
                   ></a>
-                  <a href="https://staging.homere.com/home" class="btn-secondary-deal">View All Items</a>
+                  <a href="#" class="btn-secondary-deal">View All Items</a>
                 </div>
               </div>
             </div>
@@ -2712,7 +2609,7 @@
           <div class="row gy-5">
             <div class="col-lg-4 col-md-6">
               <div class="footer-widget footer-about">
-                <a href="index.html" class="logo">
+                <a href="#" class="logo">
                   <img src="assets/images/homere-logo.jpg" alt="HOMÈRE" />
                 </a>
                 <p>
@@ -2732,7 +2629,7 @@
                     <i class="bi bi-envelope"></i>
                     <span
                       ><a
-                        href="mailto:hello@homere.com"
+                        href="#"
                         >hello@homere.com</a
                       ></span
                     >
@@ -2745,12 +2642,12 @@
               <div class="footer-widget">
                 <h4>Collections</h4>
                 <ul class="footer-links">
-                  <li><a href="https://staging.homere.com/collections/9">New Arrivals</a></li>
-                  <li><a href="https://staging.homere.com/collections/9">Bestsellers</a></li>
-                  <li><a href="https://staging.homere.com/collections/9">Furniture</a></li>
-                  <li><a href="https://staging.homere.com/collections/9">Lighting</a></li>
-                  <li><a href="https://staging.homere.com/collections/9">Decor Accents</a></li>
-                  <li><a href="https://staging.homere.com/collections/105">Private Sale</a></li>
+                  <li><a href="#">New Arrivals</a></li>
+                  <li><a href="#">Bestsellers</a></li>
+                  <li><a href="#">Furniture</a></li>
+                  <li><a href="#">Lighting</a></li>
+                  <li><a href="#">Decor Accents</a></li>
+                  <li><a href="#">Private Sale</a></li>
                 </ul>
               </div>
             </div>
@@ -2759,11 +2656,11 @@
               <div class="footer-widget">
                 <h4>Services</h4>
                 <ul class="footer-links">
-                  <li><a href="https://staging.homere.com/home">Interior Decoration</a></li>
-                  <li><a href="https://staging.homere.com/home">Space Planning</a></li>
-                  <li><a href="https://staging.homere.com/home">Custom Furniture</a></li>
-                  <li><a href="https://staging.homere.com/home">White-Glove Delivery</a></li>
-                  <li><a href="https://staging.homere.com/home">Bespoke Sourcing</a></li>
+                  <li><a href="#">Interior Decoration</a></li>
+                  <li><a href="#">Space Planning</a></li>
+                  <li><a href="#">Custom Furniture</a></li>
+                  <li><a href="#">White-Glove Delivery</a></li>
+                  <li><a href="#">Bespoke Sourcing</a></li>
                 </ul>
               </div>
             </div>
@@ -2772,11 +2669,11 @@
               <div class="footer-widget">
                 <h4>Visit</h4>
                 <ul class="footer-links">
-                  <li><a href="https://staging.homere.com/home">Showroom</a></li>
-                  <li><a href="https://staging.homere.com/home">Book Consultation</a></li>
-                  <li><a href="https://staging.homere.com/home">Care Guide</a></li>
-                  <li><a href="https://staging.homere.com/home">Delivery</a></li>
-                  <li><a href="https://staging.homere.com/home">Contact</a></li>
+                  <li><a href="#">Showroom</a></li>
+                  <li><a href="#">Book Consultation</a></li>
+                  <li><a href="#">Care Guide</a></li>
+                  <li><a href="#">Delivery</a></li>
+                  <li><a href="#">Contact</a></li>
                 </ul>
               </div>
             </div>
@@ -2786,7 +2683,7 @@
                 <h4>Design Notes</h4>
                 <p>Room ideas, new arrivals, and private homeware offers.</p>
                 <form
-                  action="forms/newsletter.php"
+                  action="#"
                   method="post"
                   class="footer-mini-form php-email-form"
                 >
@@ -2834,14 +2731,65 @@
               <strong class="sitename">HOMÈRE</strong>. All Rights Reserved.
             </p>
             <div class="legal-links">
-              <a href="tos.html">Terms</a>
-              <a href="privacy.html">Privacy</a>
-              <a href="https://staging.homere.com/home">Consultation</a>
+              <a href="#">Terms</a>
+              <a href="#">Privacy</a>
+              <a href="#">Consultation</a>
             </div>
           </div>
         </div>
       </div>
     </footer>
+
+    <!-- Cart drawer -->
+    <div class="cart-scrim" id="cartScrim" tabindex="-1"></div>
+    <aside
+      class="cart-drawer"
+      id="cartDrawer"
+      aria-hidden="true"
+      aria-labelledby="cartDrawerTitle"
+    >
+      <div class="cart-drawer-head">
+        <div>
+          <h2 id="cartDrawerTitle">Your <em>cart</em></h2>
+          <span class="cart-drawer-sub">Homeware &amp; decor</span>
+        </div>
+        <button
+          type="button"
+          class="cart-drawer-x"
+          id="cartDrawerClose"
+          aria-label="Close cart"
+        >
+          x
+        </button>
+      </div>
+      <div class="cart-drawer-body">
+        <div class="cart-empty-visual">
+          <div class="cart-empty-photo">
+            <img
+              src="https://images.unsplash.com/photo-1590422749897-47036da0b0ff?q=80&w=600&auto=format&fit=crop"
+              alt="Curated decorative object"
+              width="600"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <p>
+            Your cart is empty. Discover cushions, candles, crystal, and
+            finishing pieces for a more considered home.
+          </p>
+          <a
+            class="cart-cta"
+            href="#"
+            onclick="closeCart(); return false;"
+            >Browse the shop</a
+          >
+        </div>
+      </div>
+      <div class="cart-drawer-foot">
+        <p>Complimentary white-glove delivery on qualifying orders.</p>
+      </div>
+    </aside>
 
     <!-- Scroll Top -->
     <a
@@ -2852,7 +2800,9 @@
     ></a>
 
     <!-- Preloader -->
-    <div id="preloader"></div>
+    <div id="preloader">
+      <div class="line"></div>
+    </div>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

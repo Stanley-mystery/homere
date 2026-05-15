@@ -174,23 +174,7 @@
       '.category-card',
       '.product-card',
       '.deal-banner',
-      '.footer-widget',
-      '.hero-copy',
-      '.hero-note',
-      '.section-kicker',
-      '.collection-card',
-      '.atelier-story > div',
-      '.atelier-story > p',
-      '.atelier-metrics div',
-      '.lookbook-copy',
-      '.lookbook-stack figure',
-      '.capsule-item',
-      '.luxury-product',
-      '.journal-image',
-      '.journal-copy',
-      '.appointment-panel > div',
-      '.appointment-form',
-      '.exquisite-footer > div'
+      '.footer-widget'
     ];
 
     const revealItems = Array.from(document.querySelectorAll(revealSelectors.join(',')));
@@ -199,11 +183,11 @@
       item.classList.add('scroll-reveal');
       item.style.setProperty('--reveal-delay', `${Math.min(index % 6, 5) * 70}ms`);
 
-      if (item.matches('.highlight-card, .intro-content, .hero-copy, .atelier-story > div, .lookbook-copy, .journal-image, .appointment-panel > div')) {
+      if (item.matches('.highlight-card, .intro-content')) {
         item.classList.add('reveal-left');
-      } else if (item.matches('.highlight-info, .deal-banner, .hero-note, .atelier-story > p, .journal-copy, .appointment-form')) {
+      } else if (item.matches('.highlight-info, .deal-banner')) {
         item.classList.add('reveal-right');
-      } else if (item.matches('.product-card, .category-card, .slide-card, .product-tile, .collection-card, .capsule-item, .luxury-product, .lookbook-stack figure')) {
+      } else if (item.matches('.product-card, .category-card, .slide-card, .product-tile')) {
         item.classList.add('reveal-scale');
       }
     });
@@ -226,7 +210,7 @@
 
     revealItems.forEach(item => observer.observe(item));
 
-    const floatingItems = document.querySelectorAll('.hero .product-tile, .highlight-card img, .hero-media img, .collection-card img, .lookbook-stack img, .journal-image img, .capsule-item img, .luxury-product img');
+    const floatingItems = document.querySelectorAll('.hero .product-tile, .highlight-card img');
     floatingItems.forEach(item => item.classList.add('scroll-float'));
 
     let ticking = false;
